@@ -1,0 +1,297 @@
+/* Zerar margens padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow', sans-serif;
+  }
+  
+  html, body {
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Barra no topo */
+  .top-bar {
+    background-color: white; /* cor estilo da barra do topo */
+    color: white;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  /* Logo */
+  .logo {
+    padding-left: 250px; /* Espaço interno da esquerda */
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  /* Menu (contêiner) */
+  .menu {
+    margin-left: auto;   /* empurra o menu pra direita */
+    padding-right: 160px; /* dá o espacinho da borda direita */
+    display: flex;
+  }
+  
+  /* Estilo dos links */
+  .menu a {
+    color: rgb(59, 59, 59);
+    text-decoration: none;
+    margin-left: 50px;
+    font-weight: 500;
+    font-size: 18px; /* aumenta o tamanho */
+  }
+
+  .icone-seta {
+    width: 10px; /* ajuste o tamanho conforme sua imagem */
+    height: auto;
+  }
+  
+  /* Conteúdo principal com espaço pra barra */
+  main {
+    padding-top: 80px;
+    text-align: center;
+  }
+
+
+  /* Main com padding para compensar o menu fixo */
+  main {
+    padding-top: 60px; /* mesmo valor da altura da barra */
+    text-align: center;
+  }
+  
+  /* Seção verde */
+  .secao-verde {
+    background-color: #c0f5cd;
+    padding: 30px 40px;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centraliza sem separar demais */
+    gap: 150px; /* Espaço entre texto e imagem (ajuste aqui) */
+  }
+
+  .secao-verde .texto {
+    max-width: 30%;
+    text-align: left;
+  }
+  
+  .secao-verde .texto h2 {
+    font-size: 50px;         /* Tamanho maior para título */
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .secao-verde .texto p {
+    font-size: 20px; /* Tamanho maior pro parágrafo */
+    margin-bottom: 20px; /* Espaço */
+    line-height: 1.6;
+    color: #444;
+  }
+
+  .botoes {
+    margin-top: 20px;
+  }
+  
+  .botaoroxo {
+    background-color: purple;  /* Define o fundo do botão como roxo */
+    color: white;              /* Define a cor do texto como branca */
+    border: none;              /* Remove a borda padrão do botão */
+    padding: 15px 20px;        /* Adiciona espaçamento interno: 15px em cima/baixo, 20px esquerda/direita */
+    border-radius: 20px;       /* Arredonda as bordas do botão (20px de raio) */
+    margin-right: 10px;        /* Dá um espaço de 10px à direita do botão (pra separar do outro botão) */
+  }
+  
+  .botaobranco {
+    background-color: transparent; /* Fundo transparente, sem cor de fundo */
+    color: black;                  /* Cor do texto preta */
+    border: 1px solid black;       /* Borda fina (1px), sólida e preta */
+    padding: 15px 20px;            /* Mesmo espaçamento interno que o botão roxo */
+    border-radius: 20px;           /* Bordas arredondadas iguais ao botão roxo */
+  }
+  
+  
+  .secao-brancasuave {
+    background-color: #f8f8f8; /* branco suave, quase cinza */
+    padding: 60px 20px;
+  }
+
+  .secao-brancasuave .titulo h2 {
+    text-align: center;
+    max-width: 70%;
+    margin: 0 auto 20px auto; /* centraliza o bloco e adiciona margem inferior */
+    font-size: 30px; /* Tamanho maior pro parágrafo */
+    margin-bottom: 20px; /* Espaço */
+  }
+
+  .setas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .premios {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .icone-seta-esquerda,
+  .icone-seta-direita {
+    width: 30px;
+    cursor: pointer;
+  }
+
+
+/* ====== Seção Recursos ====== */
+.secao-recursos {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 20px;
+  }
+  
+  .secao-recursos .textinho p {
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  /* ====== Container geral para os cards ====== */
+  .cards-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  
+  /* ====== Colunas ====== */
+  .coluna-esquerda,
+  .coluna-direita {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* ====== Card 1 - Vertical (Imagem em cima, texto embaixo) ====== */
+  .card-vertical {
+    background-color: white;
+    padding: 20px;
+    width: 320px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: left;
+  }
+  
+  .card-imagem-cima img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .card-texto-baixo h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #111;
+  }
+  
+  .card-texto-baixo p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 15px;
+    line-height: 1.5;
+  }
+  
+  .card-texto-baixo a {
+    font-size: 14px;
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .card-texto-baixo a:hover {
+    text-decoration: underline;
+  }
+  
+  /* ====== Cards 2 e 3 - Horizontais (Imagem ao lado do texto) ====== */
+  .card-horizontal {
+    display: flex;
+    background-color: #fde2e2;
+    border-radius: 8px;
+    overflow: hidden;
+    max-width: 600px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-texto {
+    padding: 20px;
+    flex: 1.5;
+  }
+  
+  .card-texto h3 {
+    margin-top: 0;
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  .card-texto p {
+    font-size: 0.95rem;
+    margin: 10px 0;
+    color: #555;
+  }
+  
+  .card-texto a {
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .card-texto a:hover {
+    text-decoration: underline;
+  }
+  
+  .card-imagem {
+    flex: 1;
+    max-width: 50%;
+    overflow: hidden;
+  }
+  
+  .card-imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: right;
+  }
+  
+  /* ====== Responsividade básica ====== */
+  @media (max-width: 768px) {
+    .cards-container {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .card-horizontal {
+      flex-direction: column;
+      max-width: 100%;
+    }
+    
+    .card-imagem {
+      max-width: 100%;
+      height: 200px;
+    }
+    
+    .card-imagem img {
+      object-position: center;
+    }
+  }
+  

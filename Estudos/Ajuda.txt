@@ -1,0 +1,14 @@
+Base do codigo já pronto
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Minha Página</title>
+  // Para linkar com css
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Olá, mundo!</h1>
+</body>
+</html>
