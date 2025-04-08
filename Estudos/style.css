@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Barlow', sans-serif;
+    font-family: 'Abel', sans-serif;
   }
   
   html, body {
@@ -102,7 +102,7 @@
   }
   
   .botaoroxo {
-    background-color: purple;  /* Define o fundo do botão como roxo */
+    background-color: blueviolet;  /* Define o fundo do botão como roxo */
     color: white;              /* Define a cor do texto como branca */
     border: none;              /* Remove a borda padrão do botão */
     padding: 15px 20px;        /* Adiciona espaçamento interno: 15px em cima/baixo, 20px esquerda/direita */
@@ -182,10 +182,9 @@
   
   /* ====== Card 1 - Vertical (Imagem em cima, texto embaixo) ====== */
   .card-vertical {
-    background-color: white;
+    background-color: rgb(251, 255, 251);
     padding: 20px;
     width: 320px;
-    border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
@@ -226,11 +225,17 @@
   /* ====== Cards 2 e 3 - Horizontais (Imagem ao lado do texto) ====== */
   .card-horizontal {
     display: flex;
-    background-color: #fde2e2;
-    border-radius: 8px;
     overflow: hidden;
     max-width: 600px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .card2 {
+    background: #fbe7e7;;
+  }
+
+  .card3 {
+    background-color: rgb(87, 177, 255);
   }
   
   .card-texto {
@@ -295,3 +300,37 @@
     }
   }
   
+  .botaorecursos {
+    background-color: transparent; /* Fundo transparente, sem cor de fundo */
+    color: black;                  /* Cor do texto preta */
+    border: 1px solid black;       /* Borda fina (1px), sólida e preta */
+    padding: 15px 20px;            /* Mesmo espaçamento interno que o botão roxo */
+    border-radius: 20px;
+    margin-top: 20px;           /* Bordas arredondadas iguais ao botão roxo */
+  }
+
+  .secao-verde2 {
+    background-color: #c0f5cd;
+    padding: 60px 30px;
+  }
+
+  .secao-verde2 .textinho {
+    max-width: 40%;
+    margin: 0 auto 20px auto; /* centraliza o bloco e adiciona margem inferior */
+  }
+
+  .secao-verde2 .textinho h2 {
+    margin-bottom: 20px;
+    font-size: 25px;         /* Tamanho maior para título */
+    margin-bottom: 20px;
+    color: #333;
+  }
+
+  .botaoroxo2 {
+    background-color: blueviolet;  /* Define o fundo do botão como roxo */
+    color: white;              /* Define a cor do texto como branca */
+    border: none;              /* Remove a borda padrão do botão */
+    padding: 15px 20px;        /* Adiciona espaçamento interno: 15px em cima/baixo, 20px esquerda/direita */
+    border-radius: 20px;       /* Arredonda as bordas do botão (20px de raio) */
+    margin-right: 10px;        /* Dá um espaço de 10px à direita do botão (pra separar do outro botão) */
+  }
