@@ -70,7 +70,7 @@
   /* Seção verde */
   .secao-verde {
     background-color: #c0f5cd;
-    padding: 30px 40px;
+    padding: 120px 40px;
   
     display: flex;
     align-items: center;
@@ -333,4 +333,31 @@
     padding: 15px 20px;        /* Adiciona espaçamento interno: 15px em cima/baixo, 20px esquerda/direita */
     border-radius: 20px;       /* Arredonda as bordas do botão (20px de raio) */
     margin-right: 10px;        /* Dá um espaço de 10px à direita do botão (pra separar do outro botão) */
+  }
+
+  .secao-rodape {
+    padding: 30px;
+    gap: 160px;
+    display: flex;
+    justify-content: center
+  }
+  
+  .coluna {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* diminui o espaçamento */
+  }
+  
+  .coluna a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+    margin-bottom: 4px;
+  }
+
+  .icone-rede {
+    width: 20px;
+    height: 20px;
+    margin-right: 6px; /* distância entre ícone e texto */
   }
