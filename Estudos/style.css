@@ -14,7 +14,6 @@
   /* Barra no topo */
   .top-bar {
     background-color: white; /* cor estilo da barra do topo */
-    color: white;
     height: 60px;
     display: flex;
     align-items: center;
@@ -53,13 +52,6 @@
     width: 10px; /* ajuste o tamanho conforme sua imagem */
     height: auto;
   }
-  
-  /* Conteúdo principal com espaço pra barra */
-  main {
-    padding-top: 80px;
-    text-align: center;
-  }
-
 
   /* Main com padding para compensar o menu fixo */
   main {
@@ -71,7 +63,6 @@
   .secao-verde {
     background-color: #c0f5cd;
     padding: 50px 40px;
-  
     display: flex;
     align-items: center;
     justify-content: center; /* Centraliza sem separar demais */
