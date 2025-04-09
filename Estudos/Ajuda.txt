@@ -12,3 +12,21 @@ Base do codigo já pronto
   <h1>Olá, mundo!</h1>
 </body>
 </html>
+
+Ajuda a subir codigo 
+
+cd caminho/para/seu/projeto
+git init
+git add .
+git commit -m "Primeiro commit"
+git remote add origin https://github.com/SEU_USUARIO/NOME_DO_REPOSITORIO.git
+git push -u origin master
+git push -u origin main
+
+E se vc já tiver um código
+
+cd caminho/para/seu/projeto
+git remote -v
+git add .
+git commit -m "Atualiza funcionalidades X e Y"
+git push
